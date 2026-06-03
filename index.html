@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>电学层析成像科研教学平台 | EMT · ECT · EIT</title>
+    <meta
+      name="description"
+      content="面向高校与实验室的电学层析成像科研教学平台，提供 EMT、ECT、EIT 实验装置、课程平台、算法演示系统与联合开发服务。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html#top" aria-label="电学层析成像首页">
+        <span class="brand-mark">ET</span>
+        <span>
+          <strong>Electrical Tomography</strong>
+          <small>Research Teaching Platform</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#products">产品方案</a>
+        <a href="#evidence">平台展示</a>
+        <a href="#cases">示范案例</a>
+        <a href="#contact">预约演示</a>
+      </nav>
+      <a class="header-cta" href="#contact">获取报价</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">University Lab Teaching Platform</p>
+          <h1>
+            <span>面向高校实验室的</span>
+            <span>电学层析成像科研</span>
+            <span>与教学平台</span>
+          </h1>
+          <p class="lead">
+            提供 EMT、ECT、EIT 实验装置、数据采集硬件、重建算法软件与课程实验包，帮助教师开设现代成像、
+            过程检测、逆问题算法和多相流测量实验课程，也支持研究团队进行原型开发与联合课题验证。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#products">查看产品方案</a>
+            <a class="button secondary" href="#contact">预约线上演示</a>
+          </div>
+          <dl class="hero-stats" aria-label="平台能力">
+            <div>
+              <dt>3</dt>
+              <dd>成像模态平台</dd>
+            </div>
+            <div>
+              <dt>12+</dt>
+              <dd>课程实验主题</dd>
+            </div>
+            <div>
+              <dt>SDK</dt>
+              <dd>算法二次开发</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero-visual" aria-label="电学层析成像动态示意">
+          <canvas id="tomographyCanvas" width="760" height="760"></canvas>
+          <div class="visual-card visual-card-top">
+            <span>Teaching Console</span>
+            <strong>sensor + DAQ + algorithm</strong>
+          </div>
+          <div class="visual-card visual-card-bottom">
+            <span>Course Output</span>
+            <strong>reconstruction dataset</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band">
+        <div>
+          <span class="section-kicker">Positioning</span>
+          <h2>把抽象逆问题变成可操作实验</h2>
+        </div>
+        <p>
+          平台面向“教学演示 + 科研验证 + 原型开发”三类需求，把传感器阵列、采集电路、标定流程、正问题建模、
+          逆问题重建和可视化界面整合为可交付系统。页面中的案例为示范案例，用于说明可构建的实验场景。
+        </p>
+      </section>
+
+      <section id="products" class="section product-section">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Product Lines</span>
+            <h2>三类科研教学产品入口</h2>
+          </div>
+          <p class="section-note">每个方案均可按课程、实验台架、研究课题或企业联合实验室需求定制。</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="device-render emt-render" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <p class="product-code">ETP-EMT</p>
+            <h3>EMT 非接触高温过程监测系统</h3>
+            <p>面向电磁感应、非接触测量、高温导电介质与过程监测课程实验。</p>
+            <dl class="mini-specs">
+              <div><dt>对象</dt><dd>导电流体 / 金属熔体模拟</dd></div>
+              <div><dt>交付</dt><dd>线圈阵列、采集模块、重建软件</dd></div>
+            </dl>
+            <a class="text-link" href="product-emt.html">查看 EMT 方案</a>
+          </article>
+          <article class="product-card featured-product">
+            <div class="device-render ect-render" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <p class="product-code">ETP-ECT</p>
+            <h3>ECT 多相流/粉体输送在线成像系统</h3>
+            <p>面向气固两相流、粉体输送、介电常数分布和高速电容测量实验。</p>
+            <dl class="mini-specs">
+              <div><dt>对象</dt><dd>非导电颗粒 / 气固流动</dd></div>
+              <div><dt>交付</dt><dd>电极传感器、标定件、教学实验包</dd></div>
+            </dl>
+            <a class="text-link" href="product-ect.html">查看 ECT 方案</a>
+          </article>
+          <article class="product-card">
+            <div class="device-render eit-render" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <p class="product-code">ETP-EIT</p>
+            <h3>EIT 生物医学与电阻抗成像系统</h3>
+            <p>面向安全电流激励、阻抗测量、医学功能成像和导电介质重建实验。</p>
+            <dl class="mini-specs">
+              <div><dt>对象</dt><dd>盐水槽 / 生物电阻抗模型</dd></div>
+              <div><dt>交付</dt><dd>电极阵列、激励采集、开放数据接口</dd></div>
+            </dl>
+            <a class="text-link" href="product-eit.html">查看 EIT 方案</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="evidence" class="section evidence-section">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Evidence</span>
+            <h2>可展示、可教学、可二次开发</h2>
+          </div>
+          <p class="section-note">用工程化证据建立信任：装置结构、采集链路、重建图像、参数表和合作方式都应清晰呈现。</p>
+        </div>
+        <div class="evidence-layout">
+          <div class="lab-render" aria-label="实验平台三维示意">
+            <div class="bench"></div>
+            <div class="tower"></div>
+            <div class="pipe"></div>
+            <div class="screen">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="daq"></div>
+          </div>
+          <div class="evidence-list">
+            <article>
+              <h3>实验平台 / 3D 渲染图</h3>
+              <p>展示管道、容器、电极或线圈阵列、采集模块和上位机界面，让采购者理解实际安装形态。</p>
+            </article>
+            <article>
+              <h3>硬件与传感器展示</h3>
+              <p>说明采集通道、激励方式、屏蔽结构、传感器安装方式和可替换实验模块。</p>
+            </article>
+            <article>
+              <h3>重建图像与数据样例</h3>
+              <p>提供原始测量矩阵、灵敏度场、LBP/Tikhonov/迭代重建结果和误差分析。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="cases" class="section applications">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Demo Cases</span>
+            <h2>示范案例与实验主题</h2>
+          </div>
+          <p class="section-note">以下为可搭建的 Demo Case，用于教学、展示和课题前期验证。</p>
+        </div>
+        <div class="app-grid">
+          <article>
+            <h3>气固两相流</h3>
+            <p>观察颗粒团聚、气泡夹带和相含率变化，适合 ECT 高速采样与流型识别实验。</p>
+          </article>
+          <article>
+            <h3>油水分层</h3>
+            <p>构建介电常数差异场，演示边界电测量对界面位置和混合状态的响应。</p>
+          </article>
+          <article>
+            <h3>肺通气模型</h3>
+            <p>用盐水槽或等效模型演示 EIT 安全电流激励、差分成像和动态阻抗变化。</p>
+          </article>
+          <article>
+            <h3>管道沉积</h3>
+            <p>模拟沉积、堵塞或壁面附着，训练学生从重建图像推断过程异常。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section spec-section">
+        <div>
+          <span class="section-kicker">Specs</span>
+          <h2>技术参数表</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>模块</th>
+                <th>教学版</th>
+                <th>科研版</th>
+                <th>可定制项</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>传感器阵列</td>
+                <td>8-16 通道</td>
+                <td>16-32 通道</td>
+                <td>管径、材料、屏蔽、快拆结构</td>
+              </tr>
+              <tr>
+                <td>采集硬件</td>
+                <td>USB 上位机采集</td>
+                <td>同步采样 / 工业接口</td>
+                <td>采样率、激励频率、通道扩展</td>
+              </tr>
+              <tr>
+                <td>重建软件</td>
+                <td>算法演示与课程实验</td>
+                <td>开放 API 与数据导出</td>
+                <td>算法插件、数据格式、界面语言</td>
+              </tr>
+              <tr>
+                <td>课程资源</td>
+                <td>实验指导书与样例数据</td>
+                <td>课题模板与评估报告</td>
+                <td>高校课程大纲、培训讲义</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section collaboration">
+        <div>
+          <span class="section-kicker">Cooperation</span>
+          <h2>合作方式</h2>
+        </div>
+        <div class="capability-grid">
+          <div>
+            <strong>原型开发</strong>
+            <span>围绕具体介质、管径、实验目标开发传感器、采集板和软件原型。</span>
+          </div>
+          <div>
+            <strong>系统定制</strong>
+            <span>按课程教学、实验台架或联合实验室要求配置硬件、软件与实验模块。</span>
+          </div>
+          <div>
+            <strong>算法授权</strong>
+            <span>提供重建算法、数据接口、样例数据集与二次开发说明。</span>
+          </div>
+          <div>
+            <strong>联合课题</strong>
+            <span>支持高校、研究所和企业研发团队共同开展可行性验证与论文实验。</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div>
+          <span class="section-kicker">Demo & Quote</span>
+          <h2>预约演示或获取科研教学方案报价</h2>
+          <p>
+            建议先提交课程方向、目标模态、实验对象、预算阶段和是否需要二次开发。我们可以据此输出初步配置建议、
+            实验模块清单和演示安排。
+          </p>
+        </div>
+        <form class="contact-form">
+          <label>
+            <span>单位/实验室方向</span>
+            <input type="text" placeholder="例如：过程检测实验室、医学工程课程组、能源装备团队" />
+          </label>
+          <label>
+            <span>关注产品</span>
+            <select>
+              <option>ECT 多相流/粉体输送在线成像系统</option>
+              <option>EMT 非接触高温过程监测系统</option>
+              <option>EIT 生物医学与电阻抗成像系统</option>
+              <option>三模态综合教学平台</option>
+            </select>
+          </label>
+          <label>
+            <span>采购/合作阶段</span>
+            <select>
+              <option>课程建设调研</option>
+              <option>实验室采购论证</option>
+              <option>科研原型开发</option>
+              <option>联合课题合作</option>
+            </select>
+          </label>
+          <label>
+            <span>需求简述</span>
+            <textarea rows="4" placeholder="描述课程目标、被测对象、通道数、预算范围、交付时间或软件接口要求"></textarea>
+          </label>
+          <button type="button">预约演示 / 获取报价</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Electrical Tomography Research Teaching Platform</span>
+      <span>EMT · ECT · EIT experimental systems and algorithm demonstrations</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
